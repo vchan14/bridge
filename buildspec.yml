@@ -27,7 +27,7 @@ phases:
     - yarn build
 
 artifacts:
-  file:
+  files:
     - "**/*"
-    discard-paths: no 
-    base-dicrectory: dist
+  discard-paths: no
+  base-directory: dist
