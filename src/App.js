@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// --- Landing Page from Material UI 
+import withRoot from './landing_page/modules/withRoot';
+// --- Post bootstrap -----
+import ProductCategories from './landing_page/modules/views/ProductCategories';
+import ProductSmokingHero from './landing_page/modules/views/ProductSmokingHero';
+import AppFooter from './landing_page/modules/views/AppFooter';
+import ProductHero from './landing_page/modules/views/ProductHero';
+import ProductValues from './landing_page/modules/views/ProductValues';
+import ProductHowItWorks from './landing_page/modules/views/ProductHowItWorks';
+import ProductCTA from './landing_page/modules/views/ProductCTA';
+import AppAppBar from './landing_page/modules/views/AppAppBar';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppAppBar />
+      <ProductHero />
+      <ProductValues />
+      <ProductCategories />
+      <ProductHowItWorks />
+      <ProductCTA />
+      <ProductSmokingHero />
+      <AppFooter />      
     </div>
   );
 }
 
-export default App;
+export default withRoot(App);

@@ -2,6 +2,7 @@
 A web application that bridges two people to learn each other language. 
 
 ## Features 
+- [] Landing Page 
 - [] Signup and login 
 - [] Avability, language preference, and proficient options
 - [] Common chatroom 
