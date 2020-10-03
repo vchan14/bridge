@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
+import SpeedIcon from '@material-ui/icons/Speed';
 
 const styles = (theme) => ({
   root: {
@@ -51,11 +52,12 @@ function ProductValues(props) {
         <Grid container spacing={5}>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
+              <SpeedIcon className={classes.image}></SpeedIcon>
+              {/* <img
                 className={classes.image}
                 src="/static/themes/onepirate/productValues1.svg"
                 alt="suitcase"
-              />
+              /> */}
               <Typography variant="h6" className={classes.title}>
                 The best luxury hotels
               </Typography>
@@ -67,11 +69,13 @@ function ProductValues(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
+              <SpeedIcon className={classes.image}></SpeedIcon>
+
+              {/* <img
                 className={classes.image}
                 src="/static/themes/onepirate/productValues2.svg"
                 alt="graph"
-              />
+              /> */}
               <Typography variant="h6" className={classes.title}>
                 New experiences
               </Typography>
@@ -83,11 +87,13 @@ function ProductValues(props) {
           </Grid>
           <Grid item xs={12} md={4}>
             <div className={classes.item}>
-              <img
+              {/* <img
                 className={classes.image}
                 src="/static/themes/onepirate/productValues3.svg"
                 alt="clock"
-              />
+              /> */}
+              <SpeedIcon className={classes.image}></SpeedIcon>
+
               <Typography variant="h6" className={classes.title}>
                 Exclusive rates
               </Typography>
