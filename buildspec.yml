@@ -29,4 +29,5 @@ phases:
 artifacts:
   files:
     - "**/*"
+  discard-paths: no
   base-dicrectory: 'build'
