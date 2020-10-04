@@ -13,6 +13,5 @@ export default function withRoot(Component) {
       </ThemeProvider>
     );
   }
-
   return WithRoot;
 }
